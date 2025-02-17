@@ -1,0 +1,237 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html, body {
+  height: 100%;
+  width: 100%;
+}
+
+#main {
+  height: 100%;
+  width: 100%;
+  padding-top: 0.5px;
+  background-color: #f8f8f8;
+}
+
+#navbar {
+  margin-top: 20px;
+  height: 10%;
+  width: 100%;
+  border-top: 3px solid black;
+  border-bottom: 3px solid black;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+#navbar h3 {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-right: 2px solid black;
+  height: 100%;
+  width: 22%;
+  font-size: 20px;
+}
+
+#navbar h3:nth-last-child(2) {
+  width: 28%;
+}
+
+#navbar h3:nth-last-child(1) {
+  border-right: none;
+  width: 10%;
+}
+
+#navbar h1 {
+  display: flex;
+  align-self: center;
+  justify-content: center;
+  height: 100%;
+  width: 18%;
+  font-size: 45px;
+}
+
+#center {
+  height: 90%;
+  width: 100%;
+  padding: 4vw;
+  position: relative;
+}
+
+#content {
+  height: 100%;
+  width: 100%;
+  position: relative;
+}
+
+#content video {
+  height: 100%;
+  width: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+
+#overlay {
+  padding-left: 5vh;
+  padding-bottom: 5vh;
+  position: absolute;
+  height: 40%;
+  width: 90%;
+  bottom: 0;
+  color: white;
+}
+
+#overlay h1 {
+  padding-bottom: 3vh;
+}
+
+#line {
+  height: 2px;
+  width: 100%;
+  position: absolute;
+  background-color: white;
+}
+
+#overlay h4 {
+  padding-top: 3vh;
+}
+
+#scroll {
+  height: 40%;
+  width: 100%;
+  white-space: nowrap;
+  overflow-x: hidden;
+  overflow-y: hidden;
+}
+
+#container {
+  height: 100%;
+  width: 100%;
+  display: inline-block;
+  padding: 2vw;
+  animation-name: anime;
+  animation-duration: 10s;
+  animation-iteration-count: infinite;
+  animation-timing-function: linear;
+}
+
+#container img {
+  border-radius: 50%;
+  height: 92%;
+  width: 14%;
+  margin: 1.4vw;
+  -o-object-fit: cover;
+     object-fit: cover;
+  -o-object-position: 30% 30%;
+     object-position: 30% 30%;
+}
+
+#container img:hover {
+  border: 4px solid black;
+}
+
+@keyframes anime {
+  from {
+    transform: translateX(0);
+  }
+  to {
+    transform: translateX(-100%);
+  }
+}
+#alphabate {
+  height: 10vh;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 1vw;
+  border-top: 2px solid black;
+  border-bottom: 2px solid black;
+}
+
+#alphabate h5 {
+  font-size: 1.7vw;
+  text-transform: uppercase;
+  font-weight: 400;
+  font-style: italic;
+  border-bottom: 2px solid black;
+}
+
+#alphabate h6 {
+  font-size: 1vw;
+  text-transform: uppercase;
+  font-weight: 400;
+  font-style: italic;
+  border-radius: 50%;
+  padding: 0.6vw 0.8vw;
+}
+
+#alphabate h6:hover {
+  border: 1px solid black;
+}
+
+#page2 {
+  height: 100%;
+  width: 100%;
+}
+
+@media (max-width: 1024px) {
+  #navbar h1 {
+    font-size: 35px;
+    width: 25%;
+  }
+  #navbar h3 {
+    font-size: 18px;
+  }
+  #navbar h3:nth-last-child(2) {
+    width: 26%;
+  }
+  #navbar h3:nth-last-child(1) {
+    width: 14%;
+  }
+}
+@media (max-width: 768px) {
+  #navbar {
+    display: none;
+  }
+  .donthide {
+    display: block;
+  }
+  .donthide h1 {
+    font-size: 30px;
+    background: red;
+  }
+  #center {
+    padding: 2vw;
+  }
+  #container img {
+    width: 40%;
+    height: auto;
+    margin: 5%;
+  }
+  #alphabate h5 {
+    font-size: 3vw;
+  }
+  #alphabate h6 {
+    font-size: 3vw;
+  }
+}
+@media (max-width: 480px) {
+  #center {
+    padding: 1vw;
+  }
+  #container img {
+    width: 45%;
+    height: auto;
+  }
+  #alphabate h5 {
+    font-size: 4vw;
+  }
+  #alphabate h6 {
+    font-size: 4vw;
+  }
+}/*# sourceMappingURL=style.css.map */
